@@ -9,6 +9,6 @@ pub struct Output {}
 
 #[plugin_fn]
 pub fn run(fin_data: FinData) -> FnResult<Output> {
-    schedule_webhook("/", "This is a webhook")?;
+    schedule_webhook("/", "{}")?;
     Ok(Output {})
 }
