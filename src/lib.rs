@@ -9,6 +9,6 @@ pub struct Output {}
 
 #[plugin_fn]
 pub fn run(fin_data: FinData) -> FnResult<Output> {
-    send_notification();
+    send_notification("this is a test".into());
     Ok(Output {})
 }
